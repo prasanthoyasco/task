@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background-color: #fff ;
+    position: relative;
+}
+
+.header-content{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 30px;
+    color: #393B3E;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vw;
+    max-width: 50%;
+    top: 20%;
+    left: 6vw;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+.header-content span{
+color:#FF6B2B;
+}
+
+.divider-head{
+    height: 45px;
+    width: 4px;
+    background-color:#393B3E;
+    border-radius: 99px; 
+  }
+  .header-modul{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 6vw;
+  }
+  .header-modul .moden-header {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+  }
+  .moden-header1{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    position: relative;
+    top: 30vh;
+    background-color: #FAFAFA;
+    border: 1px solid #00000038;
+    border-radius: 100vh 0vh 0vh 100vh;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 2vw;
+  }
+  .header-modul p{
+    font-family:"Nunito Sans", sans-serif;
+    letter-spacing: 2px;
+    z-index: 0;
+    margin-left:-80px;
+
+  }
+  .header-modul   span{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 100px;
+    z-index: 1;
+    margin-left:40px;
+    color: #FFFFFF;
+    opacity: 30%;
+  }
+  .moden-header{
+    position: absolute;
+    margin-top: 2vw;
+    top: 0;
+    left: 0;
+    background-color: #FAFAFA;
+    border: 1px solid #00000038;
+    border-radius: 100vh 0vh 0vh 100vh;
+    height: 20rem;
+    width: 22rem;
+    position: relative;
+    top: 30vh;
+    margin-left:-100px;
+    z-index: 0;
+    }
+
+   
+   .moden-header:nth-child(2) {
+    z-index: 1;
+    margin-left:-150px;
+  }
+   .moden-header:nth-child(3) {
+    z-index: 2;
+    margin-left:-150px;
+  }
+   .moden-header:nth-child(4) {
+    z-index: 3;
+    margin-left:-150px;
+  }
+  .moden-header:nth-child(5) {
+    z-index: 4;
+    margin-left:-150px;
+  }
+  .moden-header:nth-child(6) {
+    z-index: 5;
+    margin-left:-150px;
+  }
+
+  .moden-header1:hover{
+    background-color: #FF6B2B;
+  }
+ .moden-header:hover:nth-child(2){
+  background-color: #FF6B2B;
+ }
+ 
+ .moden-header:hover:nth-child(3){
+  background-color: #FF6B2B;
+ }
+ .moden-header:hover:nth-child(4){
+  background-color: #FF6B2B;
+ }
+ .moden-header:hover:nth-child(5){
+  background-color: #FF6B2B;
+ }
+ .moden-header:hover:nth-child(6){
+  background-color: #FF6B2B;
+ }
+
+ 
