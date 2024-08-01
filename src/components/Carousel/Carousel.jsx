@@ -17,7 +17,7 @@ const Carousel = () => {
   return (
    <Container>
     <Row>
-    <Col xs={12} md={7}>
+    <Col xs={12} md={7} sm={12}>
        <div className='slider-container'>
         <Swiper
             effect={'coverflow'}
@@ -31,7 +31,31 @@ const Carousel = () => {
                 depth: 100,
                 modifier: 2.5,
             }}
-          
+            breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                400:{
+                  slidesPerView:1,
+                },
+                639: {
+                  slidesPerView: 1,
+                },
+                865:{
+                  slidesPerView:2
+                },
+                1000:{
+                  slidesPerView:3,
+                  zoom:50
+                },
+                1500:{
+                  slidesPerView:3,
+                  zoom:50
+                },
+                1700:{
+                  slidesPerView:3
+                }
+              }}
             modules={[EffectCoverflow]}
         >
             <SwiperSlide>
@@ -48,7 +72,7 @@ const Carousel = () => {
         </Swiper>
     </div>
     </Col>
-    <Col xs={6} md={5}>
+    <Col xs={12} md={5} sm={12}>
     <div className="content">
       <h3>
       Value Engineering

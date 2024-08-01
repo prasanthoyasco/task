@@ -69,3 +69,52 @@
     cursor: pointer;
     padding: 1px;
 }
+/* @media only screen and (max-width: 600px) {
+.certificate,.divider,.navvbar-menu{
+    display: none;
+}
+
+.navvbar-right{
+    display: none;
+}
+} */
+ @media(max-width:1050px) {
+    .navvbar .logo{
+        width: 140px;
+    }
+    .navvbar-menu{
+        gap:20px;
+        font: size 17px;
+    }
+    .navvbar-right{
+        gap: 30px;
+    }
+    .navvbar-right button{
+        padding: 8px 25px;
+    }
+ }
+ @media(max-width:900px) {
+    .navvbar .logo{
+        width: 120px;
+    }
+    .navvbar-menu{
+        gap:13px;
+        font-size: 14px;
+    }
+    .navvbar-right{
+        gap: 10px;
+    }
+    .navvbar-right button{
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+    .certificate,.divider{
+        display: none;
+    }
+ }
+ @media(max-width:750px) {
+    
+    .navvbar-menu,.certificate,.divider{
+        display: none;
+    }
+ }

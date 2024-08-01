@@ -20,3 +20,34 @@ font-weight: 500;
   .content p {
     margin-top: 20px;
   }
+
+    @media(max-width:1050px) {
+    
+      .content,p{
+        max-width: 100%;
+        font-size: 14px;
+      }
+      .container{
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width:900px) {
+      .slider-container {
+        margin-top: 4rem;
+      }
+      .content{
+        margin-top: 4rem;
+      }
+    }
+    @media (max-width:750px) {
+      .slider-container {
+        margin-top: 15rem;
+      }
+      .content{
+        margin-top: 2rem;
+      }
+      .container{
+        margin-bottom: 15vh;
+      }
+    }

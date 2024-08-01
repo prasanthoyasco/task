@@ -7,9 +7,15 @@ const portfolio = () => {
   return (
    <Container>
     <Row>
-      <Col>C
+      <Col>
+      <div className="images">
+
+      </div>
       </Col>
       <Col>
+      <div className="contents">
+        
+      </div>
       </Col>
     </Row>
    </Container>
