@@ -68,6 +68,7 @@
 .navvbar li {
     cursor: pointer;
     padding: 1px;
+    font-family: "Montserrat";
 }
 /* @media only screen and (max-width: 600px) {
 .certificate,.divider,.navvbar-menu{

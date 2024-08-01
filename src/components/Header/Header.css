@@ -83,17 +83,18 @@ color:#FF6B2B;
   .header-modul p{
     font-family:"Nunito Sans", sans-serif;
     letter-spacing: 2px;
-    z-index: 0;
+    z-index: 1;
     margin-left:-80px;
 
   }
-  .header-modul   span{
-    font-family:"Nunito Sans", sans-serif;
-    font-size: 100px;
-    z-index: 1;
+  .header-modul span{
+    font-family: "Montserrat";
+    font-size: 150px;
+    font-weight:500;
+    z-index: 0;
     margin-left:40px;
     color: #FFFFFF;
-    opacity: 30%;
+    opacity: 50%;
   }
   .moden-header{
     position: absolute;
