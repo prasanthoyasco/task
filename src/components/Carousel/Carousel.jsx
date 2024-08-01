@@ -29,7 +29,7 @@ const Carousel = () => {
                 rotate: 0,
                 stretch: 0,
                 depth: 100,
-                modifier: 2.5,
+                modifier: 10,
             }}
             breakpoints={{
                 0: {
@@ -46,11 +46,11 @@ const Carousel = () => {
                 },
                 1000:{
                   slidesPerView:3,
-                  zoom:50
+                  scale:10
                 },
                 1500:{
                   slidesPerView:3,
-                  zoom:50
+                  scale:2
                 },
                 1700:{
                   slidesPerView:3
