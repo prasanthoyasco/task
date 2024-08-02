@@ -20,7 +20,12 @@ font-weight: 500;
   .content p {
     margin-top: 20px;
   }
-
+  .swiper-slide {
+    opacity: .2;
+  }
+  .swiper-slide-active{
+    opacity: 1;
+  }
     @media(max-width:1050px) {
     
       .content,p{

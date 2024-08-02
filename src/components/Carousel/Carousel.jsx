@@ -23,14 +23,16 @@ const Carousel = () => {
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
-            loop={true}
-            slidesPerView={3}
+          
+            slidesPerView={2}
             coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
                 depth: 100,
-                modifier: 10,
+                modifier: 3,
+                slideShadows: true
             }}
+            loop={true}
             breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -45,8 +47,8 @@ const Carousel = () => {
                   slidesPerView:2
                 },
                 1000:{
-                  slidesPerView:3,
-                  scale:10
+                  slidesPerView:2,
+             
                 },
                 1500:{
                   slidesPerView:3,
@@ -62,11 +64,15 @@ const Carousel = () => {
                 <img src={assets.image1} alt="burger" />
             </SwiperSlide>
             <SwiperSlide>
+                <img src={assets.image3} alt="burger" />
+            </SwiperSlide>
+            <SwiperSlide>
                 <img src={assets.image2} alt="burger" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src={assets.image3} alt="burger" />
             </SwiperSlide>
+            
          
             <div className="slider-controler"></div>
         </Swiper>
