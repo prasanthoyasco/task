@@ -1,7 +1,7 @@
 
 import "./Carousel.css"
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCoverflow } from 'swiper/modules'
+import { Swiper, SwiperSlide} from 'swiper/react'
+import { EffectCoverflow,Autoplay } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 import 'swiper/css/effect-coverflow'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,14 +23,18 @@ const Carousel = () => {
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
-          
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false
+          }}
             slidesPerView={2}
             coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
                 depth: 100,
                 modifier: 3,
-                slideShadows: true
+                slideShadows: true,
+               
             }}
             loop={true}
             breakpoints={{
@@ -51,14 +55,13 @@ const Carousel = () => {
              
                 },
                 1500:{
-                  slidesPerView:3,
-                  scale:2
+                  slidesPerView:3
                 },
                 1700:{
                   slidesPerView:3
                 }
               }}
-            modules={[EffectCoverflow]}
+            modules={[EffectCoverflow,Autoplay]}
         >
             <SwiperSlide>
                 <img src={assets.image1} alt="burger" />

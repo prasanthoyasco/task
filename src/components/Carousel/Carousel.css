@@ -21,7 +21,7 @@ font-weight: 500;
     margin-top: 20px;
   }
   .swiper-slide {
-    opacity: .2;
+    opacity: .1;
   }
   .swiper-slide-active{
     opacity: 1;

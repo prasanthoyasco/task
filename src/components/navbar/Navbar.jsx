@@ -10,7 +10,7 @@ const Navbar = () => {
         ‘A’ grade Electrical Contractors & Engineers
       </div>
       <ul className="navvbar-menu">
-        <li>About</li>
+        <li><a href="/about">About</a></li>
         <li>Services</li>
         <li>Portfolio Projects</li> 
         <li>All Project</li>
