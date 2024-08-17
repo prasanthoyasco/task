@@ -1,0 +1,126 @@
+
+  .box{
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .bg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 370px;
+    width: 90%;
+    background-color: #262626;
+    border-radius: 20px;
+  }
+  .bg .imgslider{
+    height: 325px;
+    width: 48%;
+    border-radius: 30px;
+  }
+  .bg .left-con{
+    height: 325px;
+    width: 48%;
+    border-radius: 10px;
+  }
+
+  .top-brands-cover {
+    height: 325px;
+    width: 300px;
+    border-radius: 5%;
+    padding: 0 10px;
+    background-color: var(--primary-bg);
+    box-shadow: var(--collection-shadow);
+    border: 0.5px solid var(--border-white);
+  }
+
+  .top-brands-image {
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .max-width {
+    max-width: 1100px;
+    margin: 0px auto;
+  }
+ .slick-list{
+    border-radius: 10px;
+ }
+
+
+  /* content */
+  .divi{
+    height: 2px;
+    border-radius: 100px;
+    width: 100px;
+    background-color: #F1761D;
+   margin-bottom: 1rem;
+  }
+  .content-service{
+    padding: 30px;
+  }
+.content-service h1{
+  color: #2489DE;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 32px;
+}
+.content-service p{
+  color: #fff;
+  margin: 0;
+}
+.content-service h3{
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+.left-con .content-service p{
+  margin-bottom: 1.5rem !important;
+    font-weight: 300;
+    font-size: 16px;
+}
+  .content-service h1 span{
+    color: #F1761D;
+    
+  }
+  .content-service a{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .content-service .butn{
+    background-color: #F1761D;
+    display: inline;
+    padding: 10px 60px 10px 15px;
+    border-radius: 100px;
+    position: relative;
+  }
+  .content-service .butn img{
+    position: absolute;
+    height: 25px; 
+    width: 20px;
+   right: 30px;
+    animation: linear infinite alternate;
+    animation-name: run;
+    animation-duration: 2s;
+  }
+  @keyframes run {
+    0% {
+      right: 30px;
+    }
+    50% {
+      right: 5px;
+    }
+    100% {
+      right: 30px;
+    }
+  }
+
+  @media(max-width:1050px) {
+
+  }

@@ -5,7 +5,6 @@ import { EffectCoverflow,Autoplay } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 import 'swiper/css/effect-coverflow'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -15,9 +14,10 @@ import {assets}from '../../assets/assets'
 
 const Carousel = () => {
   return (
-   <Container>
+    <div className="container-xxl caro">
+   <div className="container">
     <Row>
-    <Col xs={12} md={7} sm={12}>
+    <Col xs={12} md={8} sm={12}>
        <div className='slider-container'>
         <Swiper
             effect={'coverflow'}
@@ -62,9 +62,9 @@ const Carousel = () => {
                 }
               }}
             modules={[EffectCoverflow,Autoplay]}
-        >
+        > 
             <SwiperSlide>
-                <img src={assets.image1} alt="burger" />
+                <img src={assets.image1}  alt="burger" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src={assets.image3} alt="burger" />
@@ -81,7 +81,7 @@ const Carousel = () => {
         </Swiper>
     </div>
     </Col>
-    <Col xs={12} md={5} sm={12}>
+    <Col xs={12} md={4} sm={12}>
     <div className="content">
       <h3>
       Value Engineering
@@ -96,7 +96,8 @@ innovative solutions to maximise the value of your investment.
       </div>
       </Col>
     </Row>
-    </Container>
+    </div>
+    </div>
 )
 }
 
