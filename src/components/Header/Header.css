@@ -11,7 +11,7 @@
     font-family:"Nunito Sans", sans-serif;
     font-size: 30px;
     color: #393B3E;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,8 +57,8 @@ color:#FF6B2B;
     background-color: #FAFAFA;
     border: 1px solid #00000038;
     border-radius: 100vh 0vh 0vh 100vh;
-    height: 20rem;
-    width: 20rem;
+    height: 13rem;
+    width: 16rem;
     margin-top: 2vw;
   }
   .header-modul p {
@@ -77,6 +77,12 @@ color:#FF6B2B;
     color: #FFFFFF;
     opacity: 50%;
   }
+  .header-modul div{
+    margin-left: -100px;
+  }
+  .header-modul .one{
+    margin-left: 6rem;
+  }
   .moden-header{
     position: absolute;
     margin-top: 2vw;
@@ -85,56 +91,59 @@ color:#FF6B2B;
     background-color: #FAFAFA;
     border: 1px solid #00000038;
     border-radius: 100vh 0vh 0vh 100vh;
-    height: 20rem;
+    height: 13rem;
     width: 22rem;
     position: relative;
     top: 30vh;
     margin-left:-100px;
     z-index: 0;
     }
-
-   
-   .moden-header:nth-child(2) {
-    z-index: 1;
-    margin-left:-150px;
-  }
-   .moden-header:nth-child(3) {
+  
+    .moden-header:nth-child(even) {
+      z-index: 1;
+      margin-left:-100px;
+      height: 13rem;
+       width: 20rem;
+      opacity: 0;
+      visibility: hidden;
+    }
+   .moden-header:nth-child(odd) {
     z-index: 2;
-    margin-left:-150px;
+    margin-left: -120px;
   }
-   .moden-header:nth-child(4) {
-    z-index: 3;
-    margin-left:-150px;
-  }
-  .moden-header:nth-child(5) {
-    z-index: 4;
-    margin-left:-150px;
-  }
-  .moden-header:nth-child(6) {
-    z-index: 5;
-    margin-left:-150px;
-  }
+  
 
   .moden-header1:hover{
     background-color: #FF6B2B;
   }
- .moden-header:hover:nth-child(2){
-  background-color: #FF6B2B;
- }
- 
+  .moden-header:hover:nth-child(2) + .hide:nth-child(1){
+   opacity: 1;
+   transition: all ease-in-out;
+   visibility: visible;
+   margin: 8rem;
+   }
+   
  .moden-header:hover:nth-child(3){
   background-color: #FF6B2B;
  }
- .moden-header:hover:nth-child(4){
-  background-color: #FF6B2B;
- }
+ 
  .moden-header:hover:nth-child(5){
   background-color: #FF6B2B;
  }
- .moden-header:hover:nth-child(6){
+ .moden-header:hover:nth-child(7){
+  background-color: #FF6B2B;
+ }
+ .moden-header:hover:nth-child(9){
+  background-color: #FF6B2B;
+ }
+ .moden-header:hover:nth-child(11){
   background-color: #FF6B2B;
  }
 
+ .moden-header .hide{
+  display: none;
+}
+ 
  @media(max-width:1050px) {
   .header{
     height: 38vw;

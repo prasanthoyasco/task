@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy" : "npm run build",
-"deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -18,8 +18,10 @@
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
+    "react-slick": "^0.30.2",
     "router-dom": "^2.2.11",
     "sass": "^1.77.8",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.1.9"
   },
   "devDependencies": {

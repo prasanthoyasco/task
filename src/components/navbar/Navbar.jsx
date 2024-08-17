@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 const Navbar = () => {
 
   return (
-    <div className="navvbar">
+    <div className="navvbar container-xxl">
       <img src={assets.logo} alt="logo" className="logo"/>
       <div className="divider"></div>
       <div className="certificate">

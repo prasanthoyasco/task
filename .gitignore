@@ -12,6 +12,7 @@ task.zip
 dist
 dist-ssr
 *.local
+src/components/Header/
 
 # Editor directories and files
 .vscode/*
